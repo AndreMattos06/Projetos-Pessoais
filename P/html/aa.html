@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Wrapper com conteúdo</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%; /* necessário para o wrapper funcionar bem */
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* garante que o footer vá para o final */
+    }
+
+    main {
+      flex: 1; /* faz o conteúdo empurrar o footer para baixo */
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <main>
+      <h1>Bem-vindo ao site!</h1>
+      <p>Este conteúdo é exibido dentro do wrapper.</p>
+
+      <!-- Teste: adicione mais conteúdo abaixo -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </main>
+
+    <footer>
+      &copy; 2025 Meu Site. Todos os direitos reservados.
+    </footer>
+  </div>
+
+</body>
+</html>
